@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Utilisation des Grid</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #4A4A4A;
+        }
+        a{
+        color: aqua;
+        transition: 0.3s;
+        }
+        
+        a:hover{
+        color: rgb(73, 73, 235);
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Colonnes adaptatives */
+            grid-gap: 20px; /* Espacement entre les éléments */
+            margin: 0 auto;
+            max-width: 1200px; /* Largeur maximale de la page */
+        }
+        .block {
+            background-color: #6ba8ef;
+            color: white;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        .block:hover {
+            transform: scale(1.03); /* Effet de survol */
+        }
+        img {
+            max-width: 100%; /* L'image prend toute la largeur du bloc */
+            border-radius: 6px;
+        }
+        .block:nth-child(1) {
+            grid-column: span 2; /* Prendre 2 colonnes */
+        }
+        .block:nth-child(2) {
+            grid-row: span 1; /* Prendre 2 lignes */
+        }
+        .block:nth-child(3) {
+            grid-column: span 1; /* Prendre 2 colonnes */
+            grid-row: span 2; /* Prendre 1 ligne */
+        }
+        .block:nth-child(4) {
+            grid-column: span 1; /* Prendre 1 colonne */
+            grid-row: span 2; /* Prendre 2 lignes */
+        }
+        .block:nth-child(5) {
+            grid-column: span 1; /* Prendre 1 colonne */
+            grid-row: span 2; /* Prendre 1 ligne */
+        }
+        .block:nth-child(6) {
+            grid-column: span 2; /* Prendre 1 colonne */
+            grid-row: span 1; /* Prendre 1 ligne */
+        }
+        .block:nth-child(7) {
+            grid-column: span 1; /* Prendre 1 colonne */
+            grid-row: span 2; /* Prendre 1 ligne */
+        }
+        .block:nth-child(8) {
+            grid-column: span 2; /* Prendre 1 colonne */
+            grid-row: span 1; /* Prendre 1 ligne */
+        }
+        .block:nth-child(9) {
+            grid-column: span 1; /* Prendre 1 colonne */
+            grid-row: span 1; /* Prendre 1 ligne */
+        }
+        .block:nth-child(10) {
+            grid-column: span 1; /* Prendre 1 colonne */
+            grid-row: span 1; /* Prendre 1 ligne */
+        }
+        .description {
+            margin-top: 10px; /* Espacement entre l'image et la description */
+        }
+        footer{
+            position: relative;
+            text-align: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Utilisation des Grid</h1>
+
+    <div class="container">
+        <div class="block">
+            <h2>Titre 1</h2>
+            <img src="logo1.png" alt="Image 1">
+            <p class="description">Description de l'image 1. Ceci est un exemple de contenu.</p>
+        </div>
+
+        <div class="block">
+            <h2>Titre 2</h2>
+            <img src="logo2.png" alt="Image 2">
+            <p class="description">Description de l'image 2. Ceci est un exemple de contenu.</p>
+        </div>
+
+        <div class="block">
+            <h2>Titre 3</h2>
+            <img src="logo3.png" alt="Image 3">
+            <p class="description">Description de l'image 3. Ceci est un exemple de contenu.</p>
+        </div>
+
+        <div class="block">
+            <h2>Titre 4</h2>
+            <img src="logo4.png" alt="Image 4">
+            <p class="description">Description de l'image 4. Ceci est un exemple de contenu.</p>
+        </div>
+
+        <div class="block">
+            <h2>Titre 5</h2>
+            <img src="logo5.png" alt="Image 5">
+            <p class="description">Description de l'image 5. Ceci est un exemple de contenu.</p>
+        </div>
+
+        <div class="block">
+            <h2>Titre 6</h2>
+            <img src="logo3.png" alt="Image 6">
+            <p class="description">Description de l'image 6. Ceci est un exemple de contenu.</p>
+        </div>
+
+        <div class="block">
+            <h2>Titre 7</h2>
+            <img src="logo1.png" alt="Image 7">
+            <p class="description">Description de l'image 7. Ceci est un exemple de contenu.</p>
+        </div>
+
+        <div class="block">
+            <h2>Titre 8</h2>
+            <img src="logo2.png" alt="Image 8">
+            <p class="description">Description de l'image 8. Ceci est un exemple de contenu.</p>
+        </div>
+
+        <div class="block">
+            <h2>Titre 9</h2>
+            <img src="logo4.png" alt="Image 9">
+            <p class="description">Description de l'image 9. Ceci est un exemple de contenu.</p>
+        </div>
+
+        <div class="block">
+            <h2>Titre 10</h2>
+            <img src="LOGO.png" alt="Image 10">
+            <p class="description">Description de l'image 10. Ceci est un exemple de contenu.</p>
+        </div>
+    </div><br><br>
+    <footer>
+        @ 2024-2025 @keyce infomatique <a href="facebook.com">facebook</a>  <a href="instagram.com">Instagram</a>  <a href="tiktok.com">Tiktok</a>
+    </footer>
+</body>
+</html>

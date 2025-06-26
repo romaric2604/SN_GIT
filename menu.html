@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tableau de Bord</title>
+
+    <!-- Inline CSS -->
+    <style>
+        img{
+            border-radius: 15px;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            height: 100vh; /* Prend toute la hauteur de la fenêtre */
+        }
+        header {
+            background-color: #4A90E2;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #f0f0f0;
+            padding: 10px;
+        }
+        nav button {
+            background-color: #4A90E2;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        nav button:hover {
+            background-color: #357ABD;
+        }
+        #iframe-container {
+            flex: 1; /* Prend tout l'espace restant */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none; 
+            display: none; /* Par défaut, tous les iframes sont cachés */
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Site étudiants</h1>
+        <img src="keyce.jpg" alt="Logo de l'École" style="max-width: 150px;">
+    </header>
+
+    <nav>
+        <button onclick="showPage('presentation')">Présentation</button>
+        <button onclick="showPage('cour')">Cours HTML</button>
+        <button onclick="showPage('flex')">Page Flex</button>
+        <button onclick="showPage('grid')">Page Grid</button>
+        <button onclick="showPage('calco')">calculatrice</button>
+        <button onclick="showPage('puzzel')">puzzel</button>
+        <button onclick="showPage('puzzel_image')">puzzel image</button>
+        <button onclick="showPage('cv')">CV</button>
+        <button onclick="showPage('qcm')">qcm</button>
+    </nav>
+
+    <div id="iframe-container">
+        <iframe id="presentation" src="presentation.html" title="Contenu Présentation"></iframe>
+        <iframe id="grid" src="grid.html" title="Contenu Grid"></iframe>
+        <iframe id="flex" src="flex.html" title="Contenu Flex"></iframe>
+        <iframe id="cour" src="cour.html" title="Contenu Cours HTML"></iframe>
+        <iframe id="cv" src="cv.html" ></iframe>
+        <iframe id="puzzel" src="puzzel.html" ></iframe>
+        <iframe id="puzzel_image" src="puzzel_image.html" ></iframe>
+        <iframe id="calco" src="./calculatrice/index.html" ></iframe>
+        <iframe id="qcm" src="qcm.html" ></iframe>
+    </div>
+
+    <!-- Inline JavaScript -->
+    <script>
+        function showPage(pageId) {
+            // Cacher tous les iframes
+            const iframes = document.querySelectorAll('iframe');
+            iframes.forEach(iframe => {
+                iframe.style.display = 'none';
+            });
+            // Afficher l'iframe correspondant
+            document.getElementById(pageId).style.display = 'block';
+        }
+
+        // Charger la page de présentation par défaut
+        showPage('presentation');
+    </script>
+
+</body>
+</html>

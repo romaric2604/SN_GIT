@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Présentation de l'Étudiant</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column; /* Aligne les éléments verticalement */
+            align-items: center; /* Centre les éléments horizontalement */
+            justify-content: center; /* Centre les éléments verticalement */
+        }
+        h1, h2 {
+            color: #4A4A4A;
+            text-align: center; /* Centrer les titres */
+        }
+        a{
+        color: aqua;
+        transition: 0.3s;
+        }
+        
+        a:hover{
+        color: rgb(73, 73, 235);
+        }
+        .container {
+            background-color: white;
+            border-radius: 12px;
+            display: flex;
+            flex-direction: column; /* Aligne les éléments verticalement */
+            align-items: center; /* Centre les éléments horizontalement */
+            justify-content: center; /* Centre les éléments verticalement */
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            width: 70%;
+            font-size: 20px; /* Largeur par défaut */
+        }
+        img {
+            max-width: 100%;
+            border-radius: 12px;
+        }
+        .profile {
+            text-align: center; /* Centrer la photo de profil et le nom */
+        }
+        .form-container {
+            width: 500px; /* Largeur fixe pour le formulaire */
+            margin: 0 auto; /* Centrer le formulaire */
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+        th {
+            background-color: #4A90E2;
+            color: white;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        input[type="text"], input[type="email"], select, textarea {
+            width: 80%;
+            padding: 10px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+            background-color: #f9f9f9; /* Couleur de fond pour les champs */
+        }
+        button {
+            background-color: #4A90E2;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin-top: 10px; /* Espacement entre les boutons */
+        }
+        button:hover {
+            background-color: #357ABD;
+        }
+        .preview {
+            margin-top: 10px;
+            border: 1px dashed #ccc;
+            padding: 10px;
+            border-radius: 6px;
+            display: none;
+        }
+        .diplomas-list {
+            list-style-type: disc; /* Style de liste pour les diplômes */
+            margin-left: 20px; /* Marges pour la liste */
+        }
+        .two-columns {
+            display: flex; /* Utiliser flexbox pour aligner les divs */
+            justify-content: space-between; /* Espacement entre les divs */
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Présentation de l'Étudiant</h1>
+
+    <div class="container">
+        <div id="profile">
+            <img  src="LOGO.png" alt="Photo de Profil de l'Étudiant">
+            <h2>EVINA ZE DIEUBENI ROMARIC</h2>
+        </div>
+        <p style="text-align: center;">Bienvenue sur la page de présentation de l'étudiant !</p>
+        
+        <div class="container">
+           
+        <h3>Présentation de l'Étudiant</h3>
+        <p>Je m'appelle EVINA ZE DIEUBENI ROMARIC, étudiant en informatique à Keyce Informatique. Actuellement en 2025, je me spécialise en développement web. J'ai acquis des compétences en développement web et j'ai eu l'occasion de travailler sur des sites web en ligne. Je suis passionné par la programmation et enthousiaste à l'idée de contribuer à plusieurs projets.</p>
+        </div>
+
+        <div class="container">
+            <h3>Diplômes Obtenus</h3>
+            <ul class="diplomas-list">
+                <li>CPE</li>
+                <li>BEPC</li>
+                <li>PROBATOIRE TI</li>
+                <li>BAC TI</li>
+            </ul>
+        </div>
+
+        <div class="container">
+            <h3>Parcours Scolaire</h3>
+            <p>J'ai fait ma maternelle à l'école AMELI, puis j'ai continué à LUKIKIS BILLINGUAL SCHOOL. Ensuite, ma famille a déménagé pour ODZA où j'ai terminé mon primaire à SAINT MICHEL ARCHANGE. J'ai eu mon CEP là-bas et mon concours d'entrée en 6e pour le LYCEE DE NKOLNDA. J'ai ensuite intégré le COLLÈGE CATHOLIQUE ET BILINGUE LA RETRAITE où j'ai obtenu mon PROBATOIRE TI et mon BAC TI. Actuellement, je suis en B1C à KEYCE INFORMATIQUE.</p>
+        </div>
+
+        <div class="container">
+            <h3>Stages et Soutenances</h3>
+            <ul>
+                <li>Stage à ANTIQUE</li>
+                <li>Stage au MINPOSTEL</li>
+                <li>Stage au CENADI</li>
+                <li>Stage à ART</li>
+            </ul>
+        </div>
+
+        <div class="container">
+            <h3>Objectifs Futurs</h3>
+            <p>Dans le futur, j'aimerais devenir un grand homme d'affaires avec une entreprise prospère et une vie de famille épanouie.</p>
+
+        </div>
+
+        <div class="container">
+            <h3>Information</h3>
+        <table>
+            <tr>
+                <th>Nom</th>
+                <th>Prénom</th>
+                <th>Âge</th>
+                <th>Classe</th>
+                <th>Établissement</th>
+                <th>Profession</th>
+                <th>Nationalité</th>
+            </tr>
+            <tr>
+                <td>EVINA ZE</td>
+                <td>DIEUBENI ROMARIC</td>
+                <td>17 ANS</td>
+                <td>B1C</td>
+                <td>KEYCE</td>
+                <td>Étudiant</td>
+                <td>Camerounaise</td>
+            </tr>
+        </table>
+            <h3>Contactez l'Étudiant</h3>
+            <div class="form-container">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Nom:</label><br>
+                        <input type="text" id="name" >
+                    </div>
+                    <div class="form-group">
+                        <label for="surname">Prénom:</label><br>
+                        <input type="text" id="surname">
+                    </div>
+                    <div class="form-group">
+                        <label for="status">Statut:</label><br>
+                        <select id="status">
+                            <option value="ami">Ami</option>
+                            <option value="camarade">Camarade</option>
+                            <option value="professeur">Professeur</option>
+                            <option value="connaissance">Connaissance</option>
+                            <option value="proche">Proche</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label><br>
+                        <input type="email" id="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label><br>
+                        <textarea id="message" rows="4"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="photo">Choisir une photo:</label>
+                        <input type="file" id="photo" accept="image/*" onchange="previewImage(event)">
+                        <div class="preview" id="imagePreview"></div>
+                    </div>
+                    <button type="submit" onclick="sendMessage()">Envoyer</button>
+                    <button type="button" onclick="resetForm()">Annuler</button>
+                </form>
+                <button onclick="downloadCV()">Télécharger le CV</button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        @ 2024-2025 @keyce infomatique <a href="facebook.com">facebook</a> <a href="instagram.com">Instagram</a><a href="tiktok.com">Tiktok</a>
+    </footer>
+
+    <!-- Inline JavaScript -->
+    <script>
+        function previewImage(event) {
+            const preview = document.getElementById('imagePreview');
+            const file = event.target.files[0];
+            const reader = new FileReader();
+            reader.onload = function(){
+                preview.style.display = 'block';
+                preview.innerHTML = '<img src="' + reader.result + '" alt="Aperçu de la photo" style="max-width: 100%; border-radius: 6px;">';
+            }
+            reader.readAsDataURL(file);
+        }
+
+        function sendMessage() {
+            alert("Votre message a été envoyé, merci !");
+            document.getElementById('contactForm').reset();
+            document.getElementById('imagePreview').style.display = 'none';
+        }
+
+        function resetForm() {
+            document.getElementById('contactForm').reset();
+            document.getElementById('imagePreview').style.display = 'none';
+        }
+
+        function downloadCV() {
+            alert("Vous avez téléchargé mon CV, merci !");
+            window.location.href = 'cv.html'; // Remplacez par le chemin de votre CV
+        }
+    </script>
+
+</body>
+</html>
